@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -s "https://catalogue-crbip.pasteur.fr/recherche_catalogue.xhtml"
