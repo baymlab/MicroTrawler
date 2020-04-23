@@ -16,5 +16,21 @@ According to all collections, it was first deposited in 1930 by one D. Thomson o
 about the Pickett-Thomson Research Laboratory, all I can find with their name are reviews of a research magazine they used to publish called 'Annals of the Pickett-Thompson
 Research Laboratory'.
 
+## april 16
 
+I think NCTC 3000 might be a cool resource to mine? Also, I should identify and look for programs that take fastq reads and predicts antibiotic resistance. I think this should probably? exist; however, I am unsure if this would necessitate a full genome assembly or I can take a kmer based approach. If the reads are not long, then I can imagine a kmer based approach would fail.
 
+Also, NCTC 30; cholera from WWI shows antibiotic resistance gene. https://www.sanger.ac.uk/news/view/genetic-code-wwi-soldiers-cholera-mapped
+
+DSMZ has predictable urls, but it's from a pdf
+
+ATCC switched numbering scheme at some point
+ 
+Ask what they can share first
+
+NCTC 1 is first sample in culture collection --> shigella flexinari
+
+CARD, antibiotic resistance database.
+
+## april 22
+Ok dab dab dab dab. NCTC trawler looks like it is working. Currently running it on everything. Gonna tackle ATCC and CIP next
