@@ -1,0 +1,55 @@
+#!/bin/bash
+
+find_max_acc() {
+    echo $(grep -o "<a[^*>]*nctc\">" <(curl -s https://www.phe-culturecollections.org.uk/products/bacteria/new-bacteria-strains.aspx) | cut -d'?' -f2 | cut -d'+' -f2 | cut -d'&' -f1 | sort -n | tail -n1)
+}
+
+build_db() {
+    for i in $(seq "$1" "$2"); do
+        url="https://www.phe-culturecollections.org.uk/products/bacteria/detail.jsp?refId=NCTC+"$i"&collection=nctc"
+        python ./nctc_trawler.py "$url" "$3"
+        status=$?
+        if [ $status -eq 0 ]; then
+            echo -e "\033[1;32m NCTC $i successfully trawled \033[m"
+            sleep "$4"
+        else
+            echo -e "\033[1;31m NCTC $i failed\033[m"
+        fi
+    done
+}
+
+main() {
+    out_dest="./nctc_db.tsv"
+    sleep_time=5
+    max_acc=$(find_max_acc)
+    min_acc=1
+    for i in "$@"; do
+    case $i in
+        -o|--output)
+        out_dest="$2"
+        shift
+        shift
+        ;;
+        -s|--sleep)
+        sleep_time="$2"
+        shift
+        shift
+        ;;
+        -m|--max)
+        max_acc="$2"
+        shift
+        shift
+        ;;
+        -n|--min)
+        min_acc="$2"
+        shift
+        shift
+        ;;
+        *)
+        ;;
+    esac
+    done
+    build_db "$min_acc" "$max_acc" "$out_dest" "$sleep_time"
+}
+
+main "$@"

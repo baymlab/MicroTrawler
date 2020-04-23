@@ -2,4 +2,5 @@
 
 #curl -s "https://www.atcc.org/search?title=All%20Products#sort=relevancy&f:contentTypeFacetATCC=[Products]" 
 #curl -s "https://www.atcc.org/products/all/BAA-245D-5.aspx#history"
-curl -s "https://www.atcc.org/products/all/BAA-1705D-5.aspx"
+#curl -s "https://www.atcc.org/products/all/BAA-1705D-5.aspx"
+curl -s "https://www.atcc.org/products/all/33399.aspx#generalinformation"
