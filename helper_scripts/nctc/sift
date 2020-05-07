@@ -1,0 +1,48 @@
+#!/bin/bash
+
+get_min_years() {
+    python extract_date.py $1 | awk -F'\t' -v min_year="$2" '{if($2 < min_year){print $0}}' | grep -v "\-1" | cut -f1 > /tmp/nctc_year_filtered_results
+}
+
+check_ena_assembly() {
+    echo -e "nctc_num\taccession\tversion\tassembly_name\tdescription" > $1
+    while read lines; do
+        nctc_acc=$(echo $lines | tr -d ' ')
+        prev=$(wc -l $1)
+        curl -X GET -s "https://www.ebi.ac.uk/ena/portal/api/search?result=assembly&query=strain=$nctc_acc" | awk -v acc=$nctc_acc '{if(NR!=1){printf "%s\t%s\t%s\t%s\t%s\n", acc, $1, $2, $3, $4}}' >> $1
+        next=$(wc -l $1)
+        [[ $prev == $next ]] && echo "$nctc_acc not found" || echo "$nctc_acc found"
+    done</tmp/nctc_year_filtered_results
+}
+
+# read in args
+main() {
+    MIN_YEAR=1940
+    INPUT="../../../2020-04-22_nctc_db.tsv"
+    OUTPUT="./assembly_out"
+    for i in "$@"; do
+    case $i in
+        -i|--input)
+        INPUT="$2"
+        shift
+        shift
+        ;;
+        -n|--min)
+        MIN_YEAR="$2"
+        shift
+        shift
+        ;;
+        -o|--output)
+        OUTPUT="$2"
+        shift
+        shift
+        ;;
+        *)
+        ;;
+    esac
+    done
+    get_min_years $INPUT $MIN_YEAR
+    check_ena_assembly $OUTPUT
+}
+
+main "$@"

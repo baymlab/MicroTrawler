@@ -1,28 +1,36 @@
 #!/bin/bash
 
+SCRIPTDIR="./helper_scripts/nctc"
+
+# search for NCTC number corresponding to most recent database addition
 find_max_acc() {
     echo $(grep -o "<a[^*>]*nctc\">" <(curl -s https://www.phe-culturecollections.org.uk/products/bacteria/new-bacteria-strains.aspx) | cut -d'?' -f2 | cut -d'+' -f2 | cut -d'&' -f1 | sort -n | tail -n1)
 }
 
+# build NCTC database 
 build_db() {
+    
+    # loop through all acc. number urls 
     for i in $(seq "$1" "$2"); do
         url="https://www.phe-culturecollections.org.uk/products/bacteria/detail.jsp?refId=NCTC+"$i"&collection=nctc"
-        python ./nctc_trawler.py "$url" "$3"
+        python "$SCRIPTDIR"/trawler.py "$url" "$3"
+       
+        # check if we failed or not
         status=$?
-        if [ $status -eq 0 ]; then
-            echo -e "\033[1;32m NCTC $i successfully trawled \033[m"
-            sleep "$4"
-        else
-            echo -e "\033[1;31m NCTC $i failed\033[m"
-        fi
+        [ $status -eq 0 ] && echo -e "\033[1;32m NCTC $i successfully trawled \033[m" || echo -e "\033[1;31m NCTC $i failed\033[m"
+
+        # sleep for a bit so we don't crash anything
+        sleep $3 
     done
 }
 
+# read in args
 main() {
     out_dest="./nctc_db.tsv"
     sleep_time=5
     max_acc=$(find_max_acc)
     min_acc=1
+    clean=2
     for i in "$@"; do
     case $i in
         -o|--output)
@@ -45,11 +53,21 @@ main() {
         shift
         shift
         ;;
+        -c|--clean)
+        clean="$2"
+        shift
+        shift
+        ;;
         *)
         ;;
     esac
     done
+
+    # build database
     build_db "$min_acc" "$max_acc" "$out_dest" "$sleep_time"
+
+    # remove all columns w/ '< $clean' number of entries
+    python $SCRIPTDIR/clean.py "$out_dest" "$clean"
 }
 
 main "$@"
