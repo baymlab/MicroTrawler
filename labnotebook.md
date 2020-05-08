@@ -34,3 +34,15 @@ CARD, antibiotic resistance database.
 
 ## april 22
 Ok dab dab dab dab. NCTC trawler looks like it is working. Currently running it on everything. Gonna tackle ATCC and CIP next
+
+# may 2020
+
+## may 7
+
+Got script to snag pre1940 ENA assemblies working. I think a couple next steps are warranted:
+1. Get CIP trawler working 
+2. Dl + analyze genomes looking for antibiotic resistance
+3. Search SRA for sequences as well
+4. Get ATCC trawler working 
+
+
