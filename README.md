@@ -15,6 +15,7 @@ There are 4 options:
 -s/--sleep : number of seconds to sleep before pinging NCTC again. default is 5
 -m/--max : max NCTC accession number to search. default is curr. max. accession number in NCTC
 -n/--min : min NCTC accession number to search. default is 1
+-c/--clean : remove very sparse columns in final database. 'very sparse' is <= $clean number of total values in a given column. Default is 2 
 ```
 
 The script basically loops through all NCTC numbers from the --min option to the --max option, and dumps all strain info found into --output.
