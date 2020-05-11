@@ -1,0 +1,71 @@
+#!/bin/python3
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import sys
+import time
+import os
+
+# function to wait until download is complete
+def download_wait(directory, timeout):
+    seconds = 0
+    dl_wait = True
+    while dl_wait and seconds < timeout:
+        time.sleep(1)
+        files = os.listdir(directory)
+        if 'Collections_Pasteur.xls.part' not in files:
+            dl_wait = False
+        seconds += 1
+    return seconds
+
+# build the stupid ass firefox webdriver
+def make_webdriver():
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("browser.download.folderList", 2)
+    profile.set_preference("browser.download.manager.showWhenStarting", False)
+    profile.set_preference("browser.download.dir", sys.argv[1])
+    profile.set_preference("browser.download.useDownloadDir", True)
+    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/vnd.ms-excel")
+
+    options = webdriver.firefox.options.Options()
+    options.headless = True
+
+    driver = webdriver.Firefox(firefox_profile=profile ,options=options)
+    return driver
+
+def main():
+    # initialize it and go over to le CIP
+    driver = make_webdriver()
+    driver.get("http://catalogue-crbip.pasteur.fr/recherche_catalogue.xhtml")
+    print("\tInitialized webdriver")
+
+    # find search bar and add 'CIP'
+    elem = driver.find_element_by_name("searchForm:j_idt90")
+    elem.clear()
+    elem.send_keys(' '.join(sys.argv[2:]))
+
+    # find and click the search button
+    driver.find_element_by_name("searchForm:btnSearch").click()
+    print("\tSearching term")
+
+    # look for element
+    try:
+        print("\tLooking for download button")
+        element = WebDriverWait(driver, 1000).until(
+                    EC.presence_of_element_located((By.ID, "form:j_idt115"))
+                )
+        element.click()
+        print("\tDownloading file...")
+        download_wait(sys.argv[1], 1000)
+        print("\tDownload complete")
+    except:
+        sys.stderr.write("\tCan't find download button!?!?!?\n")
+        sys.exit(2)
+    finally:
+        driver.quit()
+
+if __name__ == "__main__":
+    main()

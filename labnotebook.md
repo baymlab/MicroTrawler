@@ -45,4 +45,10 @@ Got script to snag pre1940 ENA assemblies working. I think a couple next steps a
 3. Search SRA for sequences as well
 4. Get ATCC trawler working 
 
+## may 9
 
+OK going to work on the CIP trawler. 
+
+## may 11
+
+OK it works.

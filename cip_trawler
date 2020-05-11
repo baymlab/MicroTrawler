@@ -1,3 +1,61 @@
 #!/bin/bash
 
-curl -s "https://catalogue-crbip.pasteur.fr/recherche_catalogue.xhtml"
+SCRIPTDIR="./helper_scripts/cip"
+
+# make it a purty tsv file
+reformat() {
+    $SCRIPTDIR/reformat_excel "$1/Collections_Pasteur.xls" "$2"
+    echo -e "\033[1;32m CIP database reformatted to tsv\033[m"
+    rm "$1/Collections_Pasteur.xls"
+}
+
+main() {
+    
+    # read in args
+    out_dest="$(pwd)/$(date +%Y-%m-%d)_cip_db.tsv"
+    search="CIP"
+    for i in "$@"; do
+    case $i in
+        -o|--output)
+        out_dest="$2"
+        shift
+        shift
+        ;;
+        -s|--search)
+        search="$2"
+        shift
+        shift
+        ;;
+        *)
+        ;;
+    esac
+    done
+
+    out_dir=$(dirname $out_dest)
+
+    # does file exist already?
+    if [ -f "$out_dir/Collections_Pasteur.xls" ]; then 
+        echo -e "\033[1;32m CIP output file 'Collections_Pasteur.xls' exists already. Continuing.\033[m"
+    else
+        
+        echo -e "\033[1;32m Trawling CIP now...\033[m"
+        # if not snag it. 
+        $SCRIPTDIR/cip_trawler_selenium "$out_dir" "$search"
+        
+        # did the last command fail?
+        status=$?
+        if [ $status -eq 0 ]; then
+            echo -e "\033[1;32m CIP $i successfully generated \033[m"
+            rm "./geckodriver.log"
+        else
+            # idk sometimes it does this. I can't figure it OUT
+            echo -e "\033[1;31m Download failed. Try again later. \033[m"
+            exit
+        fi
+    fi
+
+    # make it a BASED tsv and not a LOSER excel sheet
+    reformat $out_dir $out_dest
+}
+
+main "$@"
