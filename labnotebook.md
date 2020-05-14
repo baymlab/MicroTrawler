@@ -49,6 +49,6 @@ Got script to snag pre1940 ENA assemblies working. I think a couple next steps a
 
 OK going to work on the CIP trawler. 
 
-## may 11
+## may 13
 
-OK it works.
+CIP trawler is working. Had to use selenium. I wrote a script to download all the FASTAs for each NCTC assembly accession number I got. Lots of .dat files?
