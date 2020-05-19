@@ -1,0 +1,72 @@
+#!/bin/bash
+
+#TODO make usage thing
+
+# go to https://github.com/enasequence/enaBrowserTools to get dis
+ENADATAGET="/home/ak586/src/enaBrowserTools/python3/enaDataGet"
+
+# readin file. first col is database accession number second col is assembly acc. number
+get_seqs() {
+    while read line; do
+        echo ""
+        db_acc=$(echo $line | cut -d' ' -f1)
+        assembly_acc=$(echo $line | cut -d' ' -f2)
+
+        # skip the header
+        #TODO make this not stupid
+        [[ $db_acc == "nctc_num" ]] && continue
+        
+        echo "Getting assembly info for $db_acc"
+        mkdir -p $2/$db_acc
+        $ENADATAGET -d $2/$db_acc $assembly_acc >> /tmp/ena_info #you can check this for more info
+        
+        echo "Getting fasta for $db_acc"
+
+        # does this file exist?
+        if [ -f $2/$db_acc/$assembly_acc/*_sequence_report.txt ]; then
+            
+            # then we can snag the ENA fasta accession number
+            #TODO check more than just the last line. missed some sequences before
+            fasta_acc=$(tail -n1 $2/$db_acc/$assembly_acc/*_sequence_report.txt | cut -f1)
+            
+            # download the file
+            curl -s "https://www.ebi.ac.uk/ena/data/view/"$fasta_acc"&display=fasta&download=gzip" > $2/$db_acc/$assembly_acc/assembly.fa.gz
+            echo "$db_acc downloaded" 
+        else
+            echo "$db_acc fasta not found. Finding fasta file..."
+            for files in $2/$db_acc/$assembly_acc/*dat*; do 
+                base=$(basename $files)
+                dir=$(dirname $files)
+                
+                # requires you to have the Biopython package downloaded 
+                python extract_seq_from_dat.py $files "$dir"/"$base".fa
+                gzip "$dir"/"$base".fa
+            done
+        fi 
+    done<$1
+}
+
+main() {
+    curl -s "http://www.ebi.ac.uk/ena/data/view/A00145&display=text"
+    INPUT="./assembly_accessions"
+    OUTDIR="."
+    for i in "$@"; do
+    case $i in 
+        -i|--input)
+        INPUT=$2
+        shift
+        shift
+        ;;
+        -o|--outdir)
+        OUTDIR=$2
+        shift
+        shift
+        ;;
+        *)
+        ;;
+    esac
+    done
+    get_seqs $INPUT $OUTDIR
+}
+
+main "$@"

@@ -2,7 +2,7 @@
 
 # extract the date using my memey heuristic from each nctc thing, then snag that subset which is before the min year (pre-antibiotics would be 1940)
 get_min_years() {
-    python extract_date.py $1 | awk -F'\t' -v min_year="$2" '{if($2 < min_year){print $0}}' | grep -v "\-1" | cut -f1 > /tmp/nctc_year_filtered_results
+    python extract_date.py $1 | grep -v '\-1' | awk -F'\t' -v min_year="$2" '{if($2 <= min_year){print $1}}' > /tmp/nctc_year_filtered_results
 }
 
 # get ena assembly accession number
@@ -28,7 +28,7 @@ check_ena_assembly() {
 # read in args
 main() {
 
-    MIN_YEAR=1940
+    MAX_YEAR=1940
     INPUT="../../../databases/2020-04-22_nctc_db.tsv"
     OUTPUT="./assembly_out"
     for i in "$@"; do

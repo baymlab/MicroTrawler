@@ -49,6 +49,15 @@ Got script to snag pre1940 ENA assemblies working. I think a couple next steps a
 
 OK going to work on the CIP trawler. 
 
-## may 13
+## may 15
 
-CIP trawler is working. Had to use selenium. I wrote a script to download all the FASTAs for each NCTC assembly accession number I got. Lots of .dat files?
+CIP trawled. Got NCTC sequences. Made histogram of CIP dates, 37 strains have no discernable year information. 
+
+Also, put a hard cap on NCTC date extractor, sent followup email to NCTC asking about how to accurately get year info.
+
+## may 18
+Got response from NCTC. I've been doing some dates wrong. turns out we don't know the info for a lot of bacterial species. 
+Extracted the fasta assemblies for the ensembl files on o2. Every strain there now has a associated fasta file. going to now work on 
+getting a script to look for antibiotic resistance using CARD.
+
+
