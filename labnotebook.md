@@ -60,4 +60,6 @@ Got response from NCTC. I've been doing some dates wrong. turns out we don't kno
 Extracted the fasta assemblies for the ensembl files on o2. Every strain there now has a associated fasta file. going to now work on 
 getting a script to look for antibiotic resistance using CARD.
 
+## may 19
+wrote ab finder using rgi. think I'm using it right? I think next step is to make a generalized framework to this project
 
