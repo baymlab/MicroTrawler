@@ -61,6 +61,7 @@ Extracted the fasta assemblies for the ensembl files on o2. Every strain there n
 getting a script to look for antibiotic resistance using CARD.
 
 ## may 20
+wrote ab finder using rgi. think I'm using it right? I think next step is to make a generalized framework to this project
 
 Ok script is up and I ran it on NCTC assemblies. failed for like 4? (turns out I didn't get fastas for them.. need to figure out how) but got results for the remaining. I have to now understand what the output of `rgi` actually means and spot check a couple to make sure it's real.
 
