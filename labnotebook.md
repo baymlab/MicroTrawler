@@ -60,4 +60,8 @@ Got response from NCTC. I've been doing some dates wrong. turns out we don't kno
 Extracted the fasta assemblies for the ensembl files on o2. Every strain there now has a associated fasta file. going to now work on 
 getting a script to look for antibiotic resistance using CARD.
 
+## may 20
 
+Ok script is up and I ran it on NCTC assemblies. failed for like 4? (turns out I didn't get fastas for them.. need to figure out how) but got results for the remaining. I have to now understand what the output of `rgi` actually means and spot check a couple to make sure it's real.
+
+I'm going to build a diagram for workflow now. going to try and make it using snakemake!
