@@ -1,2 +1,0 @@
-SyntaxError in line 45 of /home/luak/rotations/baym/MicroTrawler/sneks/Snakefile:
-Command must be given as string after the shell keyword. (Snakefile, line 45)

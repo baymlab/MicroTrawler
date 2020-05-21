@@ -1,6 +1,0 @@
-Building DAG of jobs...
-candidate job all
-	wildcards: 
-MissingInputException in line 4 of /home/luak/rotations/baym/MicroTrawler/sneks/Snakefile:
-Missing input files for rule all:
-output/nctc/ena/summaryoutput/cip/ena/summary
