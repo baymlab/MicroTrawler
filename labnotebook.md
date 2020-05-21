@@ -66,3 +66,5 @@ wrote ab finder using rgi. think I'm using it right? I think next step is to mak
 Ok script is up and I ran it on NCTC assemblies. failed for like 4? (turns out I didn't get fastas for them.. need to figure out how) but got results for the remaining. I have to now understand what the output of `rgi` actually means and spot check a couple to make sure it's real.
 
 I'm going to build a diagram for workflow now. going to try and make it using snakemake!
+
+snakemake is hard. I don't like it.

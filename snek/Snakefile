@@ -30,7 +30,7 @@ rule filter_samples:
  output:
      "output/{database}/{database}-atorbefore-1940"
  shell:
-     "cat {input} | awk '{if($2<=1940){print $1}}' | tr -d ' ' > {output}"
+     "cat {input} | awk '{{if($2<=1940){{print $1}}}}' | tr -d ' ' > {output}"
 
 rule get_seq_accession_numbers:
  input:
