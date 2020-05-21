@@ -1,0 +1,65 @@
+#sequencing_db = ['ena']
+#database = ['nctc','cip']
+
+rule all:
+    input:
+        "output/nctc/ena/summary",
+        "output/cip/ena/summary",
+        "output/atcc/ena/summary",
+        "output/nctc/sra/summary",
+        "output/cip/sra/summary",
+        "output/atcc/sra/summary"
+
+rule generate_db:
+    output:
+        "output/{database}/{database}.tsv"
+    shell:
+        "../{database}_trawler -o {output}"
+
+rule generate_dates:
+    input:
+     "output/{database}/{database}.tsv"
+    output:
+     "output/{database}/{database}_dates"
+    shell:
+     "../helper_scripts/{database}/extract_date {input} > {output}"
+
+rule filter_samples:
+ input:
+     "output/{database}/{database}_dates",
+ output:
+     "output/{database}/{database}-atorbefore-1940"
+ shell:
+     "cat {input} | awk '{{if($2<=1940){{print $1}}}}' | tr -d ' ' > {output}"
+
+rule get_seq_accession_numbers:
+ input:
+     "output/{database}/{database}-atorbefore-1940"
+ output:
+     "output/{database}/{database}_{sequencing_db}-assembly-accessions"
+ shell:
+     "../helper_scripts/generic/check_{sequencing_db} -i {input} -o {output} -d {database}"
+
+rule download_sequences:
+ input:
+     assembly_accesions="output/{database}/{database}_{sequencing_db}-assembly-accessions"
+ output:
+    "output/{database}/{sequencing_db}/dl_results"
+ shell:
+    "mkdir -p output/{database}/{sequencing_db}; ../helper_scripts/generic/download_{sequencing_db} -i {input.assembly_accessions} -o output/{database}/{sequencing_db} > {output}"
+
+rule look_for_ab_resistance: 
+    input:
+        "output/{database}/{sequencing_db}/dl_results"
+    output:
+        "output/{database}/{sequencing_db}/ab_resist_done"
+    shell:
+        "../helper_scripts/generic/look_for_ab_resist -i output/{database}/{sequencing_db} -j jobtemp"
+
+rule get_summary_stats:
+    input:
+        "output/{database}/{sequencing_db}/ab_resist_done"
+    output:
+        "output/{database}/{sequencing_db}/summary"
+    shell:
+        "for rgiout in {input}/*/*/*.txt; do grep 'Strict' $rgioout; done | wc -l > {output}"    

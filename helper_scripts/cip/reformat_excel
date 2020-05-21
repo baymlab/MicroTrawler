@@ -4,5 +4,11 @@ import pandas as pd
 import sys
 #read
 x = pd.read_excel(sys.argv[1], index_col=0)
+better_col = {}
+for ugly_col in x:
+    sexy_col = ugly_col.replace(":","")
+    sexy_col = sexy_col.replace(" ", "_")
+    better_col[ugly_col] = sexy_col
+x = x.rename(columns=better_col)
 #write
 x.to_csv(sys.argv[2], sep='\t')

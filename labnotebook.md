@@ -49,6 +49,22 @@ Got script to snag pre1940 ENA assemblies working. I think a couple next steps a
 
 OK going to work on the CIP trawler. 
 
-## may 11
+## may 15
 
-OK it works.
+CIP trawled. Got NCTC sequences. Made histogram of CIP dates, 37 strains have no discernable year information. 
+
+Also, put a hard cap on NCTC date extractor, sent followup email to NCTC asking about how to accurately get year info.
+
+## may 18
+Got response from NCTC. I've been doing some dates wrong. turns out we don't know the info for a lot of bacterial species. 
+Extracted the fasta assemblies for the ensembl files on o2. Every strain there now has a associated fasta file. going to now work on 
+getting a script to look for antibiotic resistance using CARD.
+
+## may 20
+wrote ab finder using rgi. think I'm using it right? I think next step is to make a generalized framework to this project
+
+Ok script is up and I ran it on NCTC assemblies. failed for like 4? (turns out I didn't get fastas for them.. need to figure out how) but got results for the remaining. I have to now understand what the output of `rgi` actually means and spot check a couple to make sure it's real.
+
+I'm going to build a diagram for workflow now. going to try and make it using snakemake!
+
+snakemake is hard. I don't like it.

@@ -1,0 +1,21 @@
+#!/bin/python
+import sys
+import pandas as pd
+import re
+x = pd.read_csv(sys.argv[1], sep='\t', index_col=0)
+#for i in x:
+#    print(i)
+#sys.exit(2)
+for index,row in x.iterrows():
+    year_ext = None
+    regex_for_year = "(?:19|20)\d{2}"
+    d_i = re.findall(regex_for_year, str(row["Date_d'isolement"]))
+    if len(d_i) != 0:
+        year_ext=min(d_i)
+    o_d = re.findall(regex_for_year, str(row['Other_designations_']))
+    if year_ext == None and len(o_d)!=0:
+        year_ext=min(o_d)
+    if year_ext == None:
+        print(row['Identification']+"\t"+"-1")
+    else:
+        print(row['Identification']+"\t"+year_ext)

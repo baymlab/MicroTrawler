@@ -1,0 +1,58 @@
+#!/bin/sh
+
+# assumes rgi is setup and working. check their git for instructions
+# I have a conda environment (RESIST) that I assume is installed here
+
+SUBMITDEMJOBS_ab_jobscripts() {
+    for db_acc in $1/*; do
+        for assembly_acc in $db_acc/*; do
+            for fastas in $assembly_acc/*.fa; do
+                # rgi doesn't like gzipped assembly files
+                fasta_fname=$(basename $fastas .fa)
+                output_basename="$assembly_acc"/"$fasta_name"_ab-search
+                job_name="$output_basename".job
+                cat $2 > $job_name
+                echo "conda activate RESIST" >> $job_name
+                echo "rgi main -i "$fastas" -o "$output_basename".rgi_out --exclude_nudge --clean --split_prodigal_jobs -n 12 --include_loose" >> $job_name
+                #cat $job_name
+                sbatch $job_name
+                #exit
+            done
+        done
+    done
+}
+
+main() {
+    # input dir is the head directory, where all subdirs are 
+    #   named after their database accession number
+    #   within those, all subdirs correspond to specific
+    #   assembly accession numbers and within THOSE subdirs are 
+    #   gzipped fasta files to search for antibiotic resistance
+    INPUTDIR=""
+    for i in "$@"; do
+    case $i in 
+        -i|--input)
+        INPUTDIR=$2
+        shift
+        shift
+        ;;
+        -j|--jobfile)
+        JOBTEMPLATE=$2
+        shift
+        shift
+        ;;
+        *)
+        ;;
+    esac
+    done
+    [ -d $INPUTDIR ] || die "$INPUTDIR doesn't exist"
+    [ -f $JOBTEMPLATE ] || die "$JOBTEMPLATE doesn't exist"
+    SUBMITDEMJOBS_ab_jobscripts $INPUTDIR $JOBTEMPLATE
+}
+
+die() {
+    printf 'error: %s.\n' "$1" >&2
+    exit 1
+}
+
+main "$@"
