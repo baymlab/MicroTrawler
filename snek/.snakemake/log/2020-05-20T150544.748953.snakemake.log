@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 25 of /home/luak/rotations/baym/MicroTrawler/sneks/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'year'

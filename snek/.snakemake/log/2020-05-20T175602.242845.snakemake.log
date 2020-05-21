@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 8 of /home/luak/rotations/baym/MicroTrawler/sneks/Snakefile:
+Missing input files for rule generate_db:
+nctc

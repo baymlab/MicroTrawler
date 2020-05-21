@@ -1,0 +1,1622 @@
+Building DAG of jobs...
+candidate job all
+	wildcards: 
+candidate job get_summary_stats
+	wildcards: database=nctc, sequencing_db=ena
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=ena
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_ena-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_ena-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_ena-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc-atorbefore-1940-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_dates
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_db
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_dates
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_db
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_dates
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_db
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_dates
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_db
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc-atorbefore-1940-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_dates
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc.tsv-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc_nctc.tsv-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job get_seq_accession_numbers
+	wildcards: database=nctc, sequencing_db=nctc.tsv
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc-atorbefore-1940
+candidate job filter_samples
+	wildcards: database=nctc
+candidate job generate_db
+	wildcards: database=nctc
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_dates
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_dates-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+candidate job download_sequences
+	wildcards: database=nctc, sequencing_db=nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_nctc_dates-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions-assembly-accessions
+Cancelling snakemake on user request.

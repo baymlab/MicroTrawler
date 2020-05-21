@@ -30,7 +30,7 @@ get_seqs() {
             fasta_acc=$(tail -n1 $2/$db_acc/$assembly_acc/*_sequence_report.txt | cut -f1)
             
             # download the file
-            curl -s "https://www.ebi.ac.uk/ena/data/view/"$fasta_acc"&display=fasta&download=gzip" > $2/$db_acc/$assembly_acc/assembly.fa.gz
+            curl -s "https://www.ebi.ac.uk/ena/data/view/"$fasta_acc"&display=fasta" > $2/$db_acc/$assembly_acc/assembly.fa
             echo "$db_acc downloaded" 
         else
             echo "$db_acc fasta not found. Finding fasta file..."
@@ -40,14 +40,13 @@ get_seqs() {
                 
                 # requires you to have the Biopython package downloaded 
                 python extract_seq_from_dat.py $files "$dir"/"$base".fa
-                gzip "$dir"/"$base".fa
+                #gzip "$dir"/"$base".fa
             done
         fi 
     done<$1
 }
 
 main() {
-    curl -s "http://www.ebi.ac.uk/ena/data/view/A00145&display=text"
     INPUT="./assembly_accessions"
     OUTDIR="."
     for i in "$@"; do

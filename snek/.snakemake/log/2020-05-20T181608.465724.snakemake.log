@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 48 of /home/luak/rotations/baym/MicroTrawler/sneks/Snakefile:
+Missing input files for rule get_summary_stats:
+output/nctc/ena

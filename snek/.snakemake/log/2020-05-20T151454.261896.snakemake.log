@@ -1,0 +1,269 @@
+Building DAG of jobs...
+Full Traceback (most recent call last):
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/__init__.py", line 544, in snakemake
+    export_cwl=export_cwl)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/workflow.py", line 415, in execute
+    dag.init()
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 121, in init
+    job = self.update([job], progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 584, in update
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 647, in update_
+    progress=progress)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 580, in update
+    self.check_periodic_wildcards(job)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/dag.py", line 425, in check_periodic_wildcards
+    value)
+  File "/home/luak/src/miniconda3/envs/snakemake_microtrawler/lib/python3.6/site-packages/snakemake/io.py", line 1142, in is_periodic
+    m = self.regex.search(value)  # search for a periodic suffix.
+KeyboardInterrupt
+
+Cancelling snakemake on user request.

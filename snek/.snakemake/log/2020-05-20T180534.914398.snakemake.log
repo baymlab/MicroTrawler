@@ -1,0 +1,3 @@
+TypeError in line 46 of /home/luak/rotations/baym/MicroTrawler/sneks/Snakefile:
+shellcmd() takes 2 positional arguments but 3 were given
+  File "/home/luak/rotations/baym/MicroTrawler/sneks/Snakefile", line 46, in <module>
