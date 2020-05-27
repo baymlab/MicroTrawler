@@ -1,0 +1,94 @@
+#!/bin/bash
+
+usage() {
+    echo "
+    This script takes in a file where every line is a database accession number, and then
+    searches the Refseq database for anything matching it. Importantly the database accession number
+    should be formatted such that there is no space between the database id and the number. (i.e.
+    I want NCTC1 and not NCTC 1)
+
+    If there are more than 10 results returned I skip the sequence. As a result, I would recommend
+    saving the output of this script somewhere for later analysis. There are three options all of 
+    which are necessary for proper functionality.
+
+    -i, --input:    path to file where every line is db accession number
+    -o, --outdir:   path to desired base output directory. within this folder, the structure will be 
+                    database_accession/refseq/bacteria/assembly_accession/
+    -t, --type:     This is for my parsing. If you're providing a list of NCTC database accessions then
+                    just say 'NCTC' if it's CIP then 'CIP'
+    "
+}
+
+
+
+get_seqs() {
+
+    # readin file. first col is database accession number 
+    # sed skips the header and reads the rest of the file
+    sed 1d $1 | while read line; do
+       
+        # extract database accession number
+        echo ""
+        db_acc=$(echo $line | cut -d' ' -f1)
+
+        # can we find it? search refseq using 'NCTC1' and 'NCTC 1'
+        echo "Searching refseq for $db_acc"
+        num=$(ncbi-genome-download -n --fuzzy-genus -g $db_acc bacteria)
+        status=$?
+        if [ $status ]; then
+            num=$(ncbi-genome-download -n --fuzzy-genus -g $(echo $db_acc | sed "s/$3/$3 /") bacteria)
+        fi
+        status=$?
+        if [ $status ]; then
+            echo "Can't find $db_acc in refseq"
+            continue
+        fi
+
+        # make output directory and download if there are less than 10 results
+        outputfolder=$2/$db_acc
+        mkdir -p $outputfolder
+        
+        # check number of hits
+        num=$(echo $num | head -n1 | cut -d' ' -f6) 
+        [[ $num -ne 1 ]] && echo "$num sequences were found for $db_acc"
+        [[ $num -gt 10 ]] && echo "too many assemblies. aborting."; continue;
+        echo "Downloading refseq entry/entries for $db_acc"
+        
+        # download
+        ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $db_acc bacteria || ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $(echo $db_acc | sed "s/$3/$3 /") bacteria
+            
+    done
+}
+
+main() {
+    INPUT="./assembly_accessions"
+    OUTDIR="."
+    for i in "$@"; do
+    case $i in 
+        -i|--input)
+        INPUT=$2
+        shift
+        shift
+        ;;
+        -o|--outdir)
+        OUTDIR=$2
+        shift
+        shift
+        ;;
+        -t|--type)
+        TYPE=$3
+        shift
+        shift
+        ;;
+        -h|--help)
+        usage
+        exit
+        ;;
+        *)
+        ;;
+    esac
+    done
+    get_seqs $INPUT $OUTDIR $TYPE
+}
+
+main "$@"
