@@ -23,13 +23,8 @@ usage() {
 
 get_seqs() {
 
-    # readin file. first col is database accession number 
-    # sed skips the header and reads the rest of the file
-    sed 1d $1 | while read line; do
-       
-        # extract database accession number
-        echo ""
-        db_acc=$(echo $line | cut -d' ' -f1)
+    # readin file. only col is database accession number 
+    while read db_acc; do
 
         # can we find it? search refseq using 'NCTC1' and 'NCTC 1'
         echo "Searching refseq for $db_acc"
@@ -55,6 +50,7 @@ get_seqs() {
         echo "Downloading refseq entry/entries for $db_acc"
         
         # download
+        echo "ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $db_acc bacteria || ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $(echo $db_acc | sed "s/$3/$3 /") bacteria"
         ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $db_acc bacteria || ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $(echo $db_acc | sed "s/$3/$3 /") bacteria
             
     done
@@ -88,6 +84,7 @@ main() {
         ;;
     esac
     done
+    mkdir -p $OUTDIR
     get_seqs $INPUT $OUTDIR $TYPE
 }
 

@@ -25,14 +25,11 @@ ENADATAGET="/home/ak586/src/enaBrowserTools/python3/enaDataGet"
 check_ena_assembly() {
 
     # make header
-    echo -e "$3_num\taccession\tversion\tassembly_name\tdescription" > $1
+    echo -e ""$3"_num\taccession\tversion\tassembly_name\tdescription" > $2
    
     # read in the list of db accessions
-    while read line; do
+    while read db_acc; do
     
-        # get db accession
-        db_acc=$(echo $line | cut -f1)
-
         # real stupid way to check if search failed
         prev=$(wc -l $2)
         
@@ -46,7 +43,7 @@ check_ena_assembly() {
     done<$1
 }
 
-# readin we output earlier first col is database accession number second col is assembly acc. number
+# readin earlier output first col is database accession number second col is assembly acc. number
 get_seqs() {
     
     sed 1d $1 | while read line; do
@@ -81,7 +78,15 @@ get_seqs() {
                 dir=$(dirname $files)
                 
                 # requires you to have the Biopython package downloaded 
-                python extract_seq_from_dat.py $files "$dir"/"$base".fa
+                #python extract_seq_from_dat.py $files "$dir"/"$base".fa
+                python -c "
+                from Bio import SeqIO
+                import gzip
+                infile = $files
+                if infile.contains('.gz'): infile = gzip.open(infile, 'rt')
+                outfile = $dir/assembly.fa
+                SeqIO.convert(infile, 'embl', outfile, 'fasta')
+                "
                
                 #compression is for LOSERS
                 #gzip "$dir"/"$base".fa 
@@ -119,6 +124,7 @@ main() {
         ;;
     esac
     done
+    mkdir -p $OUTDIR
     check_ena_assembly $INPUT $OUTDIR/assembly_accessions $TYPE
     get_seqs $OUTDIR/assembly_accessions $OUTDIR
 }

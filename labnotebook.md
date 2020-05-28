@@ -68,3 +68,7 @@ Ok script is up and I ran it on NCTC assemblies. failed for like 4? (turns out I
 I'm going to build a diagram for workflow now. going to try and make it using snakemake!
 
 snakemake is hard. I don't like it.
+
+## may 28
+
+Moved everything to o2 and am in the process of writing scripts to run everything in a clean fashion. Wrote a function that should theoretically scrape ncbi refseq but it's a pain in the ass. Also trying to consolidate input and output formats for my scripts.
