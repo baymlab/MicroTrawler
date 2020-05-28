@@ -1,37 +1,76 @@
 #!/bin/bash
 
-#TODO make usage thing
+usage() {
+    echo "
+
+    This script takes in a file where every line is a database accession number and then searches
+    the ENA database for sequences pertaining to it.  Couple notes. First, we're only searching the
+    assembly database. If somebody has sequenced a strain but didn't bother assembling and uploading
+    it we miss it. Second, we're literally just searching the accession number (i.e. NCTC10); if 
+    somebody decided to get cute with naming we miss it. 
+
+    3 required options:
+
+    -i, --input:    path to input file where every line is db accession (w/o space)
+    -o, --output:   Path to desired output base directory. Within this folder, the 
+                    structure will be database_accession/assembly_accession/*
+    -t, --type:     Database type we're looking in. i.e. 'NCTC' or 'CIP'
+    "
+}
 
 # go to https://github.com/enasequence/enaBrowserTools to get dis
 ENADATAGET="/home/ak586/src/enaBrowserTools/python3/enaDataGet"
 
-# readin file. first col is database accession number second col is assembly acc. number
+# get ena assembly accession number
+check_ena_assembly() {
+
+    # make header
+    echo -e ""$3"_num\taccession\tversion\tassembly_name\tdescription" > $2
+   
+    # read in the list of db accessions
+    while read db_acc; do
+    
+        # real stupid way to check if search failed
+        prev=$(wc -l $2)
+        
+        # if we get a hit, we append it to our file
+        curl -X GET -s "https://www.ebi.ac.uk/ena/portal/api/search?result=assembly&query=strain=$db_acc" | awk -v acc=$db_acc '{if(NR!=1){printf "%s\t%s\t%s\t%s\t%s\n", acc, $1, $2, $3, $4}}' >> $2
+        
+        # we're checking if it was found
+        next=$(wc -l $2)
+        [[ $prev == $next ]] && echo "$db_acc not found" || echo "$db_acc found"
+    
+    done<$1
+}
+
+# readin earlier output first col is database accession number second col is assembly acc. number
 get_seqs() {
-    while read line; do
+    
+    sed 1d $1 | while read line; do
+        
         echo ""
         db_acc=$(echo $line | cut -d' ' -f1)
         assembly_acc=$(echo $line | cut -d' ' -f2)
 
-        # skip the header
-        #TODO make this not stupid
-        [[ $db_acc == "nctc_num" ]] && continue
-        
+        # extract and make output folder for strain we care about
         echo "Getting assembly info for $db_acc"
         mkdir -p $2/$db_acc
-        $ENADATAGET -d $2/$db_acc $assembly_acc >> /tmp/ena_info #you can check this for more info
-        
+        $ENADATAGET -d $2/$db_acc $assembly_acc >> ~/.cache/ena_info #you can check this for more info
+       
+
         echo "Getting fasta for $db_acc"
 
-        # does this file exist?
+        # check if we have a sequence report!
         if [ -f $2/$db_acc/$assembly_acc/*_sequence_report.txt ]; then
             
-            # then we can snag the ENA fasta accession number
+            # if we do, then we can snag the ENA fasta accession number
             #TODO check more than just the last line. missed some sequences before
             fasta_acc=$(tail -n1 $2/$db_acc/$assembly_acc/*_sequence_report.txt | cut -f1)
             
             # download the file
             curl -s "https://www.ebi.ac.uk/ena/data/view/"$fasta_acc"&display=fasta" > $2/$db_acc/$assembly_acc/assembly.fa
             echo "$db_acc downloaded" 
+        
         else
             echo "$db_acc fasta not found. Finding fasta file..."
             for files in $2/$db_acc/$assembly_acc/*dat*; do 
@@ -39,20 +78,36 @@ get_seqs() {
                 dir=$(dirname $files)
                 
                 # requires you to have the Biopython package downloaded 
-                python extract_seq_from_dat.py $files "$dir"/"$base".fa
-                #gzip "$dir"/"$base".fa
+                #python extract_seq_from_dat.py $files "$dir"/"$base".fa
+                python -c "
+                from Bio import SeqIO
+                import gzip
+                infile = $files
+                if infile.contains('.gz'): infile = gzip.open(infile, 'rt')
+                outfile = $dir/assembly.fa
+                SeqIO.convert(infile, 'embl', outfile, 'fasta')
+                "
+               
+                #compression is for LOSERS
+                #gzip "$dir"/"$base".fa 
             done
         fi 
-    done<$1
+    done
 }
 
 main() {
-    INPUT="./assembly_accessions"
+    INPUT="./db_accessions"
     OUTDIR="."
+    TYPE="CIP"
     for i in "$@"; do
     case $i in 
         -i|--input)
         INPUT=$2
+        shift
+        shift
+        ;;
+        -t|--type)
+        TYPE=$2
         shift
         shift
         ;;
@@ -61,11 +116,17 @@ main() {
         shift
         shift
         ;;
+        -h|--help)
+        usage
+        exit
+        ;;
         *)
         ;;
     esac
     done
-    get_seqs $INPUT $OUTDIR
+    mkdir -p $OUTDIR
+    check_ena_assembly $INPUT $OUTDIR/assembly_accessions $TYPE
+    get_seqs $OUTDIR/assembly_accessions $OUTDIR
 }
 
 main "$@"

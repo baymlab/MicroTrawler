@@ -9,9 +9,11 @@ SUBMITDEMJOBS_ab_jobscripts() {
             for fastas in $assembly_acc/*.fa; do
                 # rgi doesn't like gzipped assembly files
                 fasta_fname=$(basename $fastas .fa)
-                output_basename="$assembly_acc"/"$fasta_name"_ab-search
+                output_basename="$assembly_acc"/"$fasta_fname"_ab-search
                 job_name="$output_basename".job
                 cat $2 > $job_name
+                #echo "conda init bash" >> $job_name
+                #echo "eval "$(conda shell.bash hook)"" >> $job_name
                 echo "conda activate RESIST" >> $job_name
                 echo "rgi main -i "$fastas" -o "$output_basename".rgi_out --exclude_nudge --clean --split_prodigal_jobs -n 12 --include_loose" >> $job_name
                 #cat $job_name

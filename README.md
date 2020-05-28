@@ -1,5 +1,13 @@
 # MicroTrawler
-🎣 - go fishing for bacterial accession numbers in public databases
+🎣 - go fishing for bancient antibiotic resistance in public databases
+
+# GAMEPLAN
+
+1. Download database [nctc_trawler, cip_trawler] to a tsv
+2. Extract best guess for culture year for each strain [helper_scripts/nctc,cip/extract_dates]
+3. Use awk to filter strains to pre-ab dates awk `{if($2<=1940){print $0}} $dates > ./ancient_strains`
+4. Download existing uploaded assemblies found in ena/refseq for each `helper_scripts/generic/download_ena,download_refseq`
+5. Search these fasta files for ABR using RGI `helper_scripts/generic/look_for_ab_resistance`
 
 ## NCTC
 
