@@ -28,7 +28,10 @@ check_ena_assembly() {
     echo -e "$3_num\taccession\tversion\tassembly_name\tdescription" > $1
    
     # read in the list of db accessions
-    while read db_acc; do
+    while read line; do
+    
+        # get db accession
+        db_acc=$(echo $line | cut -f1)
 
         # real stupid way to check if search failed
         prev=$(wc -l $2)
