@@ -1,5 +1,5 @@
 # MicroTrawler
-🎣 - go fishing for bancient antibiotic resistance in public databases
+🎣 - go fishing for ancient antibiotic resistance in public databases
 
 # GAMEPLAN
 
