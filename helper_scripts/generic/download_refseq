@@ -25,35 +25,61 @@ get_seqs() {
 
     # readin file. only col is database accession number 
     while read db_acc; do
+       
+        space=FALSE
+        db_acc_with_space=$(echo $db_acc | sed "s/$3/$3 /")
 
         # can we find it? search refseq using 'NCTC1' and 'NCTC 1'
         echo "Searching refseq for $db_acc"
-        num=$(ncbi-genome-download -n --fuzzy-genus -g $db_acc bacteria)
+        out=$(ncbi-genome-download -n --fuzzy-genus -g "$db_acc" bacteria 2> /dev/null)
         status=$?
-        if [ $status ]; then
-            num=$(ncbi-genome-download -n --fuzzy-genus -g $(echo $db_acc | sed "s/$3/$3 /") bacteria)
-        fi
-        status=$?
-        if [ $status ]; then
-            echo "Can't find $db_acc in refseq"
-            continue
+        if [[ $status -ne 0 ]]; then
+            out=$(ncbi-genome-download -n --fuzzy-genus -g "$db_acc_with_space" bacteria 2> /dev/null)
+            status=$?
+            if [[ $status -ne 0 ]]; then
+                echo "Can't find $db_acc in refseq"
+                echo ""
+                continue
+            else
+                SPACE=TRUE
+            fi
         fi
 
+        # filter out shitty hits. i.e. NCTC12077 when looking for NCTC120
+        if [ "$SPACE" == "TRUE" ]; then
+            matched_output=$(echo "$out" | grep -E "($db_acc_with_space)(\s|$)")
+        else
+            matched_output=$(echo "$out" | grep -E "($db_acc)(\s|$)")
+        fi
+        if [[ -z $matched_output ]]; then
+            echo "Can't find $db_acc in refseq"
+            echo ""
+            continue
+        fi
+        
         # make output directory and download if there are less than 10 results
         outputfolder=$2/$db_acc
         mkdir -p $outputfolder
         
         # check number of hits
-        num=$(echo $num | head -n1 | cut -d' ' -f6) 
-        [[ $num -ne 1 ]] && echo "$num sequences were found for $db_acc"
-        [[ $num -gt 10 ]] && echo "too many assemblies. aborting."; continue;
+        num=$(echo $matched_output | wc -l) 
+        echo "$num sequences were found for $db_acc"
+        echo $matched_output > $2/$db_acc/accessions_to_snag
         echo "Downloading refseq entry/entries for $db_acc"
         
         # download
-        echo "ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $db_acc bacteria || ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $(echo $db_acc | sed "s/$3/$3 /") bacteria"
-        ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $db_acc bacteria || ncbi-genome-download -o $2/$db_acc -F fasta,fenbank --fuzzy-genus -g $(echo $db_acc | sed "s/$3/$3 /") bacteria
-            
-    done
+        ncbi-genome-download -o $2/$db_acc -F fasta,genbank -A $(echo $matched_output | cut -f1 -d' ' | tr '\n' ',') bacteria
+        echo "Downloaded data"
+        echo "Unzipping fasta"
+        for fa in $(find $2/$db_acc -name "*.fna.gz"); do
+            name=$(basename $fa .fna.gz)
+            dir=$(dirname $fa)
+            zcat $fa > "$dir"/"$name".fa
+        done
+        echo "Complete"
+        echo ""
+    
+    done<$1
 }
 
 main() {
@@ -72,7 +98,7 @@ main() {
         shift
         ;;
         -t|--type)
-        TYPE=$3
+        TYPE=$2
         shift
         shift
         ;;
