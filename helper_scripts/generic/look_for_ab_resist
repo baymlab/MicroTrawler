@@ -1,40 +1,49 @@
 #!/bin/sh
 
-# assumes rgi is setup and working. check their git for instructions
-# I have a conda environment (RESIST) that I assume is installed here
+usage() {
+    echo "
+
+    This script assumes that you have rgi loaded and working to submit jobs. Couple options:
+
+    -i, --input:   path to file where every line is a path to a unzipped fasta assembly. Use find!
+    -o, --output:   path to a file where every line is where rgi output should be dumped. Assumed to match the input!
+    -j, --jobfile:  path to a jobtemplate file for O2
+    
+    "
+}
+
 
 SUBMITDEMJOBS_ab_jobscripts() {
-    for db_acc in $1/*; do
-        for assembly_acc in $db_acc/*; do
-            for fastas in $assembly_acc/*.fa; do
-                # rgi doesn't like gzipped assembly files
-                fasta_fname=$(basename $fastas .fa)
-                output_basename="$assembly_acc"/"$fasta_fname"_ab-search
-                job_name="$output_basename".job
-                cat $2 > $job_name
-                #echo "conda init bash" >> $job_name
-                #echo "eval "$(conda shell.bash hook)"" >> $job_name
-                echo "conda activate RESIST" >> $job_name
-                echo "rgi main -i "$fastas" -o "$output_basename".rgi_out --exclude_nudge --clean --split_prodigal_jobs -n 12 --include_loose" >> $job_name
-                #cat $job_name
-                sbatch $job_name
-                #exit
-            done
-        done
+   
+    # make array of inputfiles 
+    mapfile -t fasta_input_list < "$1"
+    mapfile -t output_dir_list < "$3"
+
+    # loop through index
+    for i in "${!fasta_input_list[@]}"; do
+       
+        fasta="${fasta_input_list[i]}"
+        outdir="${output_dir_list[i]}"
+        fasta_fname="$(basename $fasta .fa)"
+        
+        output_basename="$outdir"/"$fasta_fname"_ab-search
+        job_name="$output_basename".job
+        
+        cat $2 > $job_name
+        echo "rgi main -i "$fasta" -o "$output_basename".rgi_out --exclude_nudge --clean --split_prodigal_jobs -n 12 --include_loose" >> $job_name
     done
 }
 
 main() {
-    # input dir is the head directory, where all subdirs are 
-    #   named after their database accession number
-    #   within those, all subdirs correspond to specific
-    #   assembly accession numbers and within THOSE subdirs are 
-    #   gzipped fasta files to search for antibiotic resistance
-    INPUTDIR=""
     for i in "$@"; do
     case $i in 
         -i|--input)
-        INPUTDIR=$2
+        INPUTFILELIST=$2
+        shift
+        shift
+        ;;
+        -o|--output)
+        OUTPUTDIRLIST=$2
         shift
         shift
         ;;
@@ -47,9 +56,11 @@ main() {
         ;;
     esac
     done
-    [ -d $INPUTDIR ] || die "$INPUTDIR doesn't exist"
+    [ -f $INPUTFILELIST ] || die "$INPUTFILELIST doesn't exist"
     [ -f $JOBTEMPLATE ] || die "$JOBTEMPLATE doesn't exist"
-    SUBMITDEMJOBS_ab_jobscripts $INPUTDIR $JOBTEMPLATE
+    [ -f $OUTPUTDIRLIST ] || die "$OUTPUTDIRLIST doesn't exist"
+    [ "$(wc -l < $INPUTFILELIST)" -eq "$(wc -l < $OUTPUTDIRLIST)" ] || die "Input file list doesn't have the same number of lines as output dir list"
+    SUBMITDEMJOBS_ab_jobscripts $INPUTFILELIST $JOBTEMPLATE $OUTPUTDIRLIST
 }
 
 die() {

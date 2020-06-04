@@ -21,6 +21,8 @@ usage() {
 # go to https://github.com/enasequence/enaBrowserTools to get dis
 ENADATAGET="/home/ak586/src/enaBrowserTools/python3/enaDataGet"
 
+
+
 # get ena assembly accession number
 check_ena_assembly() {
 
@@ -79,20 +81,25 @@ get_seqs() {
                 
                 # requires you to have the Biopython package downloaded 
                 #python extract_seq_from_dat.py $files "$dir"/"$base".fa
-                python -c "
-                from Bio import SeqIO
-                import gzip
-                infile = $files
-                if infile.contains('.gz'): infile = gzip.open(infile, 'rt')
-                outfile = $dir/assembly.fa
-                SeqIO.convert(infile, 'embl', outfile, 'fasta')
-                "
-               
+                extract_dat $files $dir
+                
                 #compression is for LOSERS
                 #gzip "$dir"/"$base".fa 
             done
         fi 
     done
+}
+
+extract_dat() {
+
+python -c "
+from Bio import SeqIO
+import gzip
+infile = '$1'
+if '.gz' in infile: infile = gzip.open(infile, 'rt')
+outfile = '$2' + '/assembly.fa'
+SeqIO.convert(infile, 'embl', outfile, 'fasta')"
+
 }
 
 main() {

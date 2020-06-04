@@ -72,3 +72,11 @@ snakemake is hard. I don't like it.
 ## may 28
 
 Moved everything to o2 and am in the process of writing scripts to run everything in a clean fashion. Wrote a function that should theoretically scrape ncbi refseq but it's a pain in the ass. Also trying to consolidate input and output formats for my scripts.
+
+## june 2
+
+Ok. I think I have successfully massaged the download_refseq and download_cip scripts to the correct format. I'm going to work on looking for ab resistance now.
+
+## june 3
+
+Submitted all the jobs looking for ab resistance. Currently I can't find any ancient strains from the CIP in the databases. Have to look into that but the format makes sense and I have a working example of everything.
