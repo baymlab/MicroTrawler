@@ -8,7 +8,7 @@ x = pd.read_csv(sys.argv[1], sep='\t', index_col=0)
 #sys.exit(2)
 for index,row in x.iterrows():
     year_ext = None
-    regex_for_year = "(?:19|20)\d{2}"
+    regex_for_year = "\\b(?:19|20)\d{2}\\b"
     d_i = re.findall(regex_for_year, str(row["Date_d'isolement"]))
     if len(d_i) != 0:
         year_ext=min(d_i)

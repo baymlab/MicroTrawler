@@ -31,6 +31,8 @@ check_ena_assembly() {
    
     # read in the list of db accessions
     while read db_acc; do
+        space=FALSE
+        db_acc_with_space=$(echo $db_acc | sed "s/$3/$3+/")
     
         # real stupid way to check if search failed
         prev=$(wc -l $2)
@@ -40,8 +42,13 @@ check_ena_assembly() {
         
         # we're checking if it was found
         next=$(wc -l $2)
-        [[ $prev == $next ]] && echo "$db_acc not found" || echo "$db_acc found"
-    
+        if [[ $prev == $next ]]; then 
+            curl -X GET -s "https://www.ebi.ac.uk/ena/portal/api/search?result=assembly&query=strain=%22$db_acc_with_space%22" | awk -v acc=$db_acc '{if(NR!=1){printf "%s\t%s\t%s\t%s\t%s\n", acc, $1, $2, $3, $4}}' >> $2
+            next=$(wc -l $2)
+            [[ $prev == $next ]] && echo "$db_acc not found" 
+        else
+            echo "$db_acc found"
+        fi
     done<$1
 }
 

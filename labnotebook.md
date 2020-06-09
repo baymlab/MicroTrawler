@@ -80,3 +80,9 @@ Ok. I think I have successfully massaged the download_refseq and download_cip sc
 ## june 3
 
 Submitted all the jobs looking for ab resistance. Currently I can't find any ancient strains from the CIP in the databases. Have to look into that but the format makes sense and I have a working example of everything.
+
+## june 8
+
+Lo, I have been played the fool. CIP sequences are also in ENA but they are 'CIP XXXX' instead of 'CIPXXXX'.
+
+OK I fixed that so now I also search the ENA using 'CIP XXXX' and 'CIPXXXX'. In addition, added a tweak to the extract dates script. It now makes sure the year is a valid word.
