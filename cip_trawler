@@ -2,6 +2,21 @@
 
 SCRIPTDIR="./helper_scripts/cip"
 
+usage() {
+    
+    echo "
+    
+    When no options are passed in, this script generates the CIP database. It must be run in the Microtrawler
+    github repo so that it can find the helper_scripts/cip directory. 2 options.
+
+    -o,--output:    full path to dump desired tsv output to. default is ./YYYY-MM-DD_cip_db.tsv
+    -s,--search:    search term to use in the CIP. default is 'CIP' which gets all strains in
+                    CIP
+    
+    "
+
+}
+
 # make it a purty tsv file
 reformat() {
     $SCRIPTDIR/reformat_excel "$1/Collections_Pasteur.xls" "$2"
@@ -26,18 +41,22 @@ main() {
         shift
         shift
         ;;
+        -h|--help)
+        usage
+        exit
+        ;;
         *)
         ;;
     esac
     done
 
     out_dir=$(dirname $out_dest)
+    mkdir -p $out_dir
 
     # does file exist already?
     if [ -f "$out_dir/Collections_Pasteur.xls" ]; then 
         echo -e "\033[1;32m CIP output file 'Collections_Pasteur.xls' exists already. Continuing.\033[m"
     else
-        
         echo -e "\033[1;32m Trawling CIP now...\033[m"
         # if not snag it. 
         $SCRIPTDIR/cip_trawler_selenium "$out_dir" "$search"
@@ -49,6 +68,7 @@ main() {
             rm "./geckodriver.log"
         else
             # idk sometimes it does this. I can't figure it OUT
+            # just run it again
             echo -e "\033[1;31m Download failed. Try again later. \033[m"
             exit
         fi

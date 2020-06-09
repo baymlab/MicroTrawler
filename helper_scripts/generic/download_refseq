@@ -2,6 +2,7 @@
 
 usage() {
     echo "
+    
     This script takes in a file where every line is a database accession number, and then
     searches the Refseq database for anything matching it. Importantly the database accession number
     should be formatted such that there is no space between the database id and the number. (i.e.
@@ -16,6 +17,7 @@ usage() {
                     database_accession/refseq/bacteria/assembly_accession/
     -t, --type:     This is for my parsing. If you're providing a list of NCTC database accessions then
                     just say 'NCTC' if it's CIP then 'CIP'
+    
     "
 }
 
