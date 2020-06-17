@@ -4,7 +4,7 @@ import re
 import sys
 
 if "-h" in sys.argv or "--help" in sys.argv:
-    print("Outputs best guess for year isolated for each strain in NCTC. \n'-1' if no data available.\n\nUse by running './extract_dates PATHTOCIPDB'")
+    print("Outputs best guess for year isolated for each strain in NCTC. \n'-1' if no data available.\n\nUse by running './extract_dates PATHTONCTCDB'")
     sys.exit()
 
 # heuristic, first look in 'Isolated From', then look in 'History', then look in 'Data', then look in 'Other', then look in 'Accession Date', then look in 'Authority', then look in 'Bibliography', then say it's not here ya lil shit

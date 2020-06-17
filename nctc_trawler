@@ -42,7 +42,7 @@ build_db() {
         [ $status -eq 0 ] && echo -e "\033[1;32m NCTC $i successfully trawled \033[m" || echo -e "\033[1;31m NCTC $i failed\033[m"
 
         # sleep for a bit so we don't crash anything
-        sleep $3 
+        sleep $4
     done
 }
 

@@ -59,7 +59,7 @@ get_seqs() {
             continue
         fi
         
-        # make output directory and download if there are less than 10 results
+        # make output directory and download 
         outputfolder=$2/$db_acc
         mkdir -p $outputfolder
         

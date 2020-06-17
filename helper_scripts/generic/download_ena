@@ -73,12 +73,13 @@ get_seqs() {
         if [ -f $2/$db_acc/$assembly_acc/*_sequence_report.txt ]; then
             
             # if we do, then we can snag the ENA fasta accession number
-            #TODO check more than just the last line. missed some sequences before
-            fasta_acc=$(tail -n1 $2/$db_acc/$assembly_acc/*_sequence_report.txt | cut -f1)
-            
-            # download the file
-            curl -s "https://www.ebi.ac.uk/ena/data/view/"$fasta_acc"&display=fasta" > $2/$db_acc/$assembly_acc/assembly.fa
-            echo "$db_acc downloaded" 
+            #check more than just the last line. missed some sequences before
+            sed 1d $2/$db_acc/$assembly_acc/*_sequence_report.txt | while read seqrepline; do
+                fa_acc=$(echo "$seqrepline" | cut -f1)    
+                # download the file
+                curl -s "https://www.ebi.ac.uk/ena/data/view/"$fasta_acc"&display=fasta" > $2/$db_acc/$assembly_acc/assembly.fa
+                echo "$db_acc downloaded" 
+            done
         
         else
             echo "$db_acc fasta not found. Finding fasta file..."
