@@ -1,0 +1,121 @@
+#!/bin/bash
+
+usage() {
+    echo "
+    
+    This script takes in a file where every line is a database accession number, and then
+    searches the Refseq database for anything matching it. Importantly the database accession number
+    should be formatted such that there is no space between the database id and the number. (i.e.
+    I want NCTC1 and not NCTC 1)
+
+    If there are more than 10 results returned I skip the sequence. As a result, I would recommend
+    saving the output of this script somewhere for later analysis. There are three options all of 
+    which are necessary for proper functionality.
+
+    -i, --input:    path to file where every line is db accession number
+    -o, --outdir:   path to desired base output directory. within this folder, the structure will be 
+                    database_accession/refseq/bacteria/assembly_accession/
+    -t, --type:     This is for my parsing. If you're providing a list of NCTC database accessions then
+                    just say 'NCTC' if it's CIP then 'CIP'
+    
+    "
+}
+
+
+
+get_seqs() {
+
+    # readin file. only col is database accession number 
+    while read db_acc; do
+       
+        space=FALSE
+        db_acc_with_space=$(echo $db_acc | sed "s/$3/$3 /")
+
+        # can we find it? search refseq using 'NCTC1' and 'NCTC 1'
+        echo "Searching refseq for $db_acc"
+        out=$(ncbi-genome-download -s genbank -n --fuzzy-genus -g "$db_acc" bacteria 2> /dev/null)
+        status=$?
+        if [[ $status -ne 0 ]]; then
+            out=$(ncbi-genome-download -s genbank -n --fuzzy-genus -g "$db_acc_with_space" bacteria 2> /dev/null)
+            status=$?
+            if [[ $status -ne 0 ]]; then
+                echo "Can't find $db_acc in refseq"
+                echo ""
+                continue
+            else
+                SPACE=TRUE
+            fi
+        fi
+
+        # filter out shitty hits. i.e. NCTC12077 when looking for NCTC120
+        if [ "$SPACE" == "TRUE" ]; then
+            matched_output=$(echo "$out" | grep -E "($db_acc_with_space)(\s|$)")
+        else
+            matched_output=$(echo "$out" | grep -E "($db_acc)(\s|$)")
+        fi
+
+        # did we find it?
+        if [[ -z $matched_output ]]; then
+            echo "Can't find $db_acc in refseq"
+            echo ""
+            continue
+        fi
+        
+        # make output directory and download 
+        outputfolder=$2/$db_acc
+        mkdir -p $outputfolder
+        
+        # check number of hits
+        num=$(echo $matched_output | wc -l) 
+        echo "$num sequences were found for $db_acc"
+        echo $matched_output > $2/$db_acc/accessions_to_snag
+        echo "Downloading refseq entry/entries for $db_acc"
+        
+        # download
+        ncbi-genome-download -s genbank -o $2/$db_acc -s genbank -F fasta,genbank -A $(echo $matched_output | cut -f1 -d' ' | tr '\n' ',') bacteria
+        echo "Downloaded data"
+        echo "Unzipping fasta"
+        for fa in $(find $2/$db_acc -name "*.fna.gz"); do
+            name=$(basename $fa .fna.gz)
+            dir=$(dirname $fa)
+            zcat $fa > "$dir"/"$name".fa
+        done
+        echo "Complete"
+        echo ""
+    
+    done<$1
+}
+
+main() {
+    INPUT="./assembly_accessions"
+    OUTDIR="."
+    for i in "$@"; do
+    case $i in 
+        -i|--input)
+        INPUT=$2
+        shift
+        shift
+        ;;
+        -o|--outdir)
+        OUTDIR=$2
+        shift
+        shift
+        ;;
+        -t|--type)
+        TYPE=$2
+        shift
+        shift
+        ;;
+        -h|--help)
+        usage
+        exit
+        ;;
+        *)
+        ;;
+    esac
+    done
+    mkdir -p $OUTDIR
+    get_seqs $INPUT $OUTDIR $TYPE
+}
+
+main "$@"
