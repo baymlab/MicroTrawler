@@ -2,7 +2,29 @@
 
 SCRIPTDIR="./helper_scripts/nctc"
 
+usage() {
+    
+    echo "
+    
+    When no options are passed in, this script generates the NCTC database. It must be run in the Microtrawler
+    github repo so that it can find the helper_scripts/nctc directory. This works by literally going through
+    every NCTC acc. number between $min and $max and scraping the html page. 5 options.
+
+    -o,--output:    full path to dump desired tsv output to. default is ./YYYY-MM-DD_nctc_db.tsv
+    -s,--sleep:     amount of seconds to sleep between strain queries. default is 5 seconds
+    -m,--max:       max NCTC acc. number to trawl. default is I try to figure out most recent strain myself.
+    -n,--min:       min NCTC acc. number to trawl. default is 1
+    -c, --clean:    sometimes a column in the output is basically empty. this option removes all columns with < 
+                    the specified number of values. default is 2.
+    
+    "
+
+}
+
+
 # search for NCTC number corresponding to most recent database addition
+#  I literally define this as the biggest NCTC acc. number I can find on the new-strains page.
+#  might be a better way to do this.
 find_max_acc() {
     echo $(grep -o "<a[^*>]*nctc\">" <(curl -s https://www.phe-culturecollections.org.uk/products/bacteria/new-bacteria-strains.aspx) | cut -d'?' -f2 | cut -d'+' -f2 | cut -d'&' -f1 | sort -n | tail -n1)
 }
@@ -20,7 +42,7 @@ build_db() {
         [ $status -eq 0 ] && echo -e "\033[1;32m NCTC $i successfully trawled \033[m" || echo -e "\033[1;31m NCTC $i failed\033[m"
 
         # sleep for a bit so we don't crash anything
-        sleep $3 
+        sleep $4
     done
 }
 
@@ -58,10 +80,16 @@ main() {
         shift
         shift
         ;;
+        -h|--help)
+        usage
+        exit
+        ;;
         *)
         ;;
     esac
     done
+
+    mkdir -p $(dirname $out_dest)
 
     # build database
     build_db "$min_acc" "$max_acc" "$out_dest" "$sleep_time"

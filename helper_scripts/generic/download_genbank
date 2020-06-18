@@ -33,10 +33,10 @@ get_seqs() {
 
         # can we find it? search refseq using 'NCTC1' and 'NCTC 1'
         echo "Searching refseq for $db_acc"
-        out=$(ncbi-genome-download -n --fuzzy-genus -g "$db_acc" bacteria 2> /dev/null)
+        out=$(ncbi-genome-download -s genbank -n --fuzzy-genus -g "$db_acc" bacteria 2> /dev/null)
         status=$?
         if [[ $status -ne 0 ]]; then
-            out=$(ncbi-genome-download -n --fuzzy-genus -g "$db_acc_with_space" bacteria 2> /dev/null)
+            out=$(ncbi-genome-download -s genbank -n --fuzzy-genus -g "$db_acc_with_space" bacteria 2> /dev/null)
             status=$?
             if [[ $status -ne 0 ]]; then
                 echo "Can't find $db_acc in refseq"
@@ -53,6 +53,8 @@ get_seqs() {
         else
             matched_output=$(echo "$out" | grep -E "($db_acc)(\s|$)")
         fi
+
+        # did we find it?
         if [[ -z $matched_output ]]; then
             echo "Can't find $db_acc in refseq"
             echo ""
@@ -70,7 +72,7 @@ get_seqs() {
         echo "Downloading refseq entry/entries for $db_acc"
         
         # download
-        ncbi-genome-download -o $2/$db_acc -F fasta,genbank -A $(echo $matched_output | cut -f1 -d' ' | tr '\n' ',') bacteria
+        ncbi-genome-download -s genbank -o $2/$db_acc -s genbank -F fasta,genbank -A $(echo $matched_output | cut -f1 -d' ' | tr '\n' ',') bacteria
         echo "Downloaded data"
         echo "Unzipping fasta"
         for fa in $(find $2/$db_acc -name "*.fna.gz"); do
