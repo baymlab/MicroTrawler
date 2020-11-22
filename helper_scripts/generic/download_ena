@@ -68,10 +68,10 @@ get_seqs() {
        
 
         echo "Getting fasta for $db_acc"
-
         # check if we have a sequence report!
         if [ -f $2/$db_acc/$assembly_acc/*_sequence_report.txt ]; then
             
+            echo "Assembly report found. Downloading fasta..."
             # if we do, then we can snag the ENA fasta accession number
             #check more than just the last line. missed some sequences before
             sed 1d $2/$db_acc/$assembly_acc/*_sequence_report.txt | while read seqrepline; do
@@ -80,20 +80,35 @@ get_seqs() {
                 curl -s "https://www.ebi.ac.uk/ena/data/view/"$fasta_acc"&display=fasta" > $2/$db_acc/$assembly_acc/assembly.fa
                 echo "$db_acc downloaded" 
             done
-        
+
+        elif [ -f $2/$db_acc/$assembly_acc/*.dat.gz ]; then
+            echo "$db_acc fasta not found easily. Checking for dat files..."
+            num_results=$(find $2/$db_acc/$assembly_acc/ -name *.dat* | wc -l)
+            echo "$num_results dat file(s) found."
+            if [ $num_results -gt 0 ]; then
+                ctr=0
+                for files in $2/$db_acc/$assembly_acc/*dat*; do 
+                    base=$(basename $files)
+                    dir=$(dirname $files)
+                    if [ $num_results -eq 1 ]; then
+                        outname="assembly.fa"
+                    else
+                        outname="assembly_"$ctr".fa"
+                    fi
+                    ((ctr++))
+                    # requires you to have the Biopython package downloaded 
+                    #python extract_seq_from_dat.py $files "$dir"/"$base".fa
+                    extract_dat $files $dir $outname
+                done
+                echo "$db_acc downloaded" 
+            fi
         else
-            echo "$db_acc fasta not found. Finding fasta file..."
-            for files in $2/$db_acc/$assembly_acc/*dat*; do 
-                base=$(basename $files)
-                dir=$(dirname $files)
-                
-                # requires you to have the Biopython package downloaded 
-                #python extract_seq_from_dat.py $files "$dir"/"$base".fa
-                extract_dat $files $dir
-                
-                #compression is for LOSERS
-                #gzip "$dir"/"$base".fa 
-            done
+            echo "Now checking xml file for dat link"
+            output="$2/$db_acc/$assembly_acc"
+            dat=$(cat $output/"$assembly_acc".xml | grep dat.gz | sed -e 's/<[^>]*>//g' | tr -d ' ')
+            wget -q -O $output/"$assembly_acc".dat.gz "$dat" 
+            extract_dat $output/"$assembly_acc".dat.gz $output assembly.fa
+            echo "$db_acc downloaded" 
         fi 
     done
 }
@@ -105,7 +120,7 @@ from Bio import SeqIO
 import gzip
 infile = '$1'
 if '.gz' in infile: infile = gzip.open(infile, 'rt')
-outfile = '$2' + '/assembly.fa'
+outfile = '$2' + '/$3'
 SeqIO.convert(infile, 'embl', outfile, 'fasta')"
 
 }
