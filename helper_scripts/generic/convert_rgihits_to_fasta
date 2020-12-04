@@ -1,0 +1,51 @@
+#!/bin/bash
+
+usage() {
+    echo "
+
+    This script takes in a file where every line is a database accession number and then searches
+    the ENA database for sequences pertaining to it.  Couple notes. First, we're only searching the
+    assembly database. If somebody has sequenced a strain but didn't bother assembling and uploading
+    it we miss it. Second, we're literally just searching the accession number (i.e. NCTC10); if 
+    somebody decided to get cute with naming we miss it. 
+
+    3 required options:
+
+    -i, --input:    path to input file where every line is db accession (w/o space)
+    -o, --output:   Path to desired output base directory. Within this folder, the 
+                    structure will be database_accession/assembly_accession/*
+    -t, --type:     Database type we're looking in. i.e. 'NCTC' or 'CIP'
+    "
+}
+
+make_fasta() {
+    awk -F '\t' '{if(NR!=1){printf ">%s;%s-%s;%s;%s;%s\n%s", $2,$3,$4,$9,$10,$17,$18}}' $1 
+}
+
+die() {
+    log "$1" "$2" "${3:-ERROR}"
+    exit 2
+}
+
+main() {
+    INPUTRGI=""
+    for i in "$@"; do
+    case $i in 
+        -i|--input)
+        INPUTRGI=$2
+        shift
+        shift
+        ;;
+        -h|--help)
+        usage
+        exit
+        ;;
+        *)
+        ;;
+    esac
+    done
+    [ -z $INPUTRGI ] && die "No RGI file specified!"
+    mak_fasta $INPUTRGI
+}
+
+main "$@"
