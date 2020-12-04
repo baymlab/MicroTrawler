@@ -19,8 +19,15 @@ usage() {
 }
 
 make_fasta() {
-    awk -F '\t' '{if(NR!=1){printf ">%s;%s-%s;%s;%s;%s\n%s", $2,$3,$4,$9,$10,$17,$18}}' $1 
+    awk -F '\t' '{if(NR!=1){printf ">%s:%s-%s:%s:%s:%s\n%s\n", $2,$3,$4,$9,$10,$17,$18}}' $1 
 }
+
+log() {
+    lcol='\033[1;33m' lcol2='\033[1;36m' lclr='\033[m'
+    printf '%b%s %b%s%b %s\n' \
+        "$lcol" "${3:-->}" "${lclr}${2:+$lcol2}" "$1" "$lclr" "$2" >&2
+}
+
 
 die() {
     log "$1" "$2" "${3:-ERROR}"
@@ -45,7 +52,7 @@ main() {
     esac
     done
     [ -z $INPUTRGI ] && die "No RGI file specified!"
-    mak_fasta $INPUTRGI
+    make_fasta $INPUTRGI
 }
 
 main "$@"
