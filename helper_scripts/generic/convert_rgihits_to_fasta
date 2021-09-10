@@ -1,0 +1,58 @@
+#!/bin/bash
+
+usage() {
+    echo "
+
+    This script takes in a file where every line is a database accession number and then searches
+    the ENA database for sequences pertaining to it.  Couple notes. First, we're only searching the
+    assembly database. If somebody has sequenced a strain but didn't bother assembling and uploading
+    it we miss it. Second, we're literally just searching the accession number (i.e. NCTC10); if 
+    somebody decided to get cute with naming we miss it. 
+
+    3 required options:
+
+    -i, --input:    path to input file where every line is db accession (w/o space)
+    -o, --output:   Path to desired output base directory. Within this folder, the 
+                    structure will be database_accession/assembly_accession/*
+    -t, --type:     Database type we're looking in. i.e. 'NCTC' or 'CIP'
+    "
+}
+
+make_fasta() {
+    awk -F '\t' '{if(NR!=1){printf ">%s:%s-%s:%s:%s:%s\n%s\n", $2,$3,$4,$9,$10,$17,$18}}' $1 
+}
+
+log() {
+    lcol='\033[1;33m' lcol2='\033[1;36m' lclr='\033[m'
+    printf '%b%s %b%s%b %s\n' \
+        "$lcol" "${3:-->}" "${lclr}${2:+$lcol2}" "$1" "$lclr" "$2" >&2
+}
+
+
+die() {
+    log "$1" "$2" "${3:-ERROR}"
+    exit 2
+}
+
+main() {
+    INPUTRGI=""
+    for i in "$@"; do
+    case $i in 
+        -i|--input)
+        INPUTRGI=$2
+        shift
+        shift
+        ;;
+        -h|--help)
+        usage
+        exit
+        ;;
+        *)
+        ;;
+    esac
+    done
+    [ -z $INPUTRGI ] && die "No RGI file specified!"
+    make_fasta $INPUTRGI
+}
+
+main "$@"

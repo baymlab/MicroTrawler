@@ -30,8 +30,8 @@ SUBMITDEMJOBS_ab_jobscripts() {
         job_name="$output_basename".job
         
         cat $2 > $job_name
-        echo "rgi main -i "$fasta" -o "$output_basename".rgi_out --exclude_nudge --clean --split_prodigal_jobs -n 12 --include_loose" >> $job_name
-    done
+        echo "rgi main -i "$fasta" -o "$output_basename".rgi_out --exclude_nudge --clean --split_prodigal_jobs -n 12" >> $job_name
+	done
 }
 
 main() {

@@ -59,7 +59,7 @@ main() {
     else
         echo -e "\033[1;32m Trawling CIP now...\033[m"
         # if not snag it. 
-        $SCRIPTDIR/cip_trawler_selenium "$out_dir" "$search"
+        python3 $SCRIPTDIR/cip_trawler_selenium "$out_dir" "$search"
         
         # did the last command fail?
         status=$?

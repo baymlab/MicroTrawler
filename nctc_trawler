@@ -35,7 +35,7 @@ build_db() {
     # loop through all acc. number urls 
     for i in $(seq "$1" "$2"); do
         url="https://www.phe-culturecollections.org.uk/products/bacteria/detail.jsp?refId=NCTC+"$i"&collection=nctc"
-        python "$SCRIPTDIR"/trawler.py "$url" "$3"
+        python3 "$SCRIPTDIR"/trawler.py "$url" "$3"
        
         # check if we failed or not
         status=$?
@@ -95,7 +95,7 @@ main() {
     build_db "$min_acc" "$max_acc" "$out_dest" "$sleep_time"
 
     # remove all columns w/ '< $clean' number of entries
-    python $SCRIPTDIR/clean.py "$out_dest" "$clean"
+    python3 $SCRIPTDIR/clean.py "$out_dest" "$clean"
 }
 
 main "$@"
