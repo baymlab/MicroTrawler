@@ -1,7 +1,5 @@
 #!/bin/bash
 
-SCRIPTDIR="./helper_scripts/nctc"
-
 usage() {
     
     echo "
@@ -16,7 +14,8 @@ usage() {
     -n,--min:       min NCTC acc. number to trawl. default is 1
     -c, --clean:    sometimes a column in the output is basically empty. this option removes all columns with < 
                     the specified number of values. default is 2.
-    
+    --scriptdir:    path to the helper_scripts directory in the Git. Default assumes you're running the trawler
+                    from the repo directory ('./helper_scripts')
     "
 
 }
@@ -35,7 +34,7 @@ build_db() {
     # loop through all acc. number urls 
     for i in $(seq "$1" "$2"); do
         url="https://www.phe-culturecollections.org.uk/products/bacteria/detail.jsp?refId=NCTC+"$i"&collection=nctc"
-        python3 "$SCRIPTDIR"/trawler.py "$url" "$3"
+        python3 "$SCRIPTDIR"/nctc/trawler.py "$url" "$3"
        
         # check if we failed or not
         status=$?
@@ -53,6 +52,7 @@ main() {
     max_acc=$(find_max_acc)
     min_acc=1
     clean=2
+    SCRIPTDIR="./helper_scripts"
     for i in "$@"; do
     case $i in
         -o|--output)
@@ -80,6 +80,11 @@ main() {
         shift
         shift
         ;;
+        --scriptdir)
+        SCRIPTDIR="$2"
+        shift
+        shift
+        ;;
         -h|--help)
         usage
         exit
@@ -95,7 +100,7 @@ main() {
     build_db "$min_acc" "$max_acc" "$out_dest" "$sleep_time"
 
     # remove all columns w/ '< $clean' number of entries
-    python3 $SCRIPTDIR/clean.py "$out_dest" "$clean"
+    python3 $SCRIPTDIR/nctc/clean.py "$out_dest" "$clean"
 }
 
 main "$@"
