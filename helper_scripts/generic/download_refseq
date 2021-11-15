@@ -73,14 +73,21 @@ get_seqs() {
         ncbi-genome-download -o $2/$db_acc -F fasta,genbank -A $(echo $matched_output | cut -f1 -d' ' | tr '\n' ',') bacteria
         echo "Downloaded data"
         echo "Unzipping fasta"
+        seqctr=0
         for fa in $(find $2/$db_acc -name "*.fna.gz"); do
-            name=$(basename $fa .fna.gz)
+            if [ $seqctr -eq 0 ]; then
+                ofile=assembly.fa
+            else
+                ofile=assembly_"$seqctr".fa
+            fi
             dir=$(dirname $fa)
-            zcat $fa > "$dir"/"$name".fa
+            zcat $fa > "$dir"/$ofile
+            ((seqctr++))
         done
         echo "Complete"
         echo ""
-    
+        mv $2/$db_acc/refseq/bacteria/* $2/$db_acc
+        rm -r $2/$db_acc/refseq
     done<$1
 }
 

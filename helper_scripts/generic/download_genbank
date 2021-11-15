@@ -14,7 +14,7 @@ usage() {
 
     -i, --input:    path to file where every line is db accession number
     -o, --outdir:   path to desired base output directory. within this folder, the structure will be 
-                    database_accession/refseq/bacteria/assembly_accession/
+                    database_accession/genbank/bacteria/assembly_accession/
     -t, --type:     This is for my parsing. If you're providing a list of NCTC database accessions then
                     just say 'NCTC' if it's CIP then 'CIP'
     
@@ -31,15 +31,15 @@ get_seqs() {
         space=FALSE
         db_acc_with_space=$(echo $db_acc | sed "s/$3/$3 /")
 
-        # can we find it? search refseq using 'NCTC1' and 'NCTC 1'
-        echo "Searching refseq for $db_acc"
+        # can we find it? search genbank using 'NCTC1' and 'NCTC 1'
+        echo "Searching genbank for $db_acc"
         out=$(ncbi-genome-download -s genbank -n --fuzzy-genus -g "$db_acc" bacteria 2> /dev/null)
         status=$?
         if [[ $status -ne 0 ]]; then
             out=$(ncbi-genome-download -s genbank -n --fuzzy-genus -g "$db_acc_with_space" bacteria 2> /dev/null)
             status=$?
             if [[ $status -ne 0 ]]; then
-                echo "Can't find $db_acc in refseq"
+                echo "Can't find $db_acc in genbank"
                 echo ""
                 continue
             else
@@ -56,7 +56,7 @@ get_seqs() {
 
         # did we find it?
         if [[ -z $matched_output ]]; then
-            echo "Can't find $db_acc in refseq"
+            echo "Can't find $db_acc in genbank"
             echo ""
             continue
         fi
@@ -69,20 +69,27 @@ get_seqs() {
         num=$(echo $matched_output | wc -l) 
         echo "$num sequences were found for $db_acc"
         echo $matched_output > $2/$db_acc/accessions_to_snag
-        echo "Downloading refseq entry/entries for $db_acc"
+        echo "Downloading genbank entry/entries for $db_acc"
         
         # download
         ncbi-genome-download -s genbank -o $2/$db_acc -s genbank -F fasta,genbank -A $(echo $matched_output | cut -f1 -d' ' | tr '\n' ',') bacteria
         echo "Downloaded data"
         echo "Unzipping fasta"
+        seqctr=0
         for fa in $(find $2/$db_acc -name "*.fna.gz"); do
-            name=$(basename $fa .fna.gz)
+            if [ $seqctr -eq 0 ]; then
+                ofile=assembly.fa
+            else
+                ofile=assembly_"$seqctr".fa
+            fi
             dir=$(dirname $fa)
-            zcat $fa > "$dir"/"$name".fa
+            zcat $fa > "$dir"/$ofile
+            ((seqctr++))
         done
         echo "Complete"
         echo ""
-    
+        mv $2/$db_acc/genbank/bacteria/* $2/$db_acc
+        rm -r $2/$db_acc/genbank
     done<$1
 }
 
