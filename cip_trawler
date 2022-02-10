@@ -1,7 +1,5 @@
 #!/bin/bash
 
-SCRIPTDIR="./helper_scripts/cip"
-
 usage() {
     
     echo "
@@ -12,14 +10,15 @@ usage() {
     -o,--output:    full path to dump desired tsv output to. default is ./YYYY-MM-DD_cip_db.tsv
     -s,--search:    search term to use in the CIP. default is 'CIP' which gets all strains in
                     CIP
-    
+    --scriptdir:    full path to the script directory. default assumes you're running the trawler from the 
+                    github repository directory './helper_scripts
     "
 
 }
 
 # make it a purty tsv file
 reformat() {
-    $SCRIPTDIR/reformat_excel "$1/Collections_Pasteur.xls" "$2"
+    $SCRIPTDIR/cip/reformat_excel "$1/Collections_Pasteur.xls" "$2"
     echo -e "\033[1;32m CIP database reformatted to tsv\033[m"
     rm "$1/Collections_Pasteur.xls"
 }
@@ -29,6 +28,7 @@ main() {
     # read in args
     out_dest="$(pwd)/$(date +%Y-%m-%d)_cip_db.tsv"
     search="CIP"
+    SCRIPTDIR="./helper_scripts"
     for i in "$@"; do
     case $i in
         -o|--output)
@@ -38,6 +38,11 @@ main() {
         ;;
         -s|--search)
         search="$2"
+        shift
+        shift
+        ;;
+        --scriptdir)
+        SCRIPTDIR="$2"
         shift
         shift
         ;;
@@ -59,7 +64,7 @@ main() {
     else
         echo -e "\033[1;32m Trawling CIP now...\033[m"
         # if not snag it. 
-        python3 $SCRIPTDIR/cip_trawler_selenium "$out_dir" "$search"
+        python3 $SCRIPTDIR/cip/cip_trawler_selenium "$out_dir" "$search"
         
         # did the last command fail?
         status=$?

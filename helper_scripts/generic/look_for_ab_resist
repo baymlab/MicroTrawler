@@ -24,6 +24,7 @@ SUBMITDEMJOBS_ab_jobscripts() {
        
         fasta="${fasta_input_list[i]}"
         outdir="${output_dir_list[i]}"
+        mkdir -p $outdir
         fasta_fname="$(basename $fasta .fa)"
         
         output_basename="$outdir"/"$fasta_fname"_ab-search
