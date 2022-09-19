@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 usage() {
     echo "
@@ -17,9 +17,6 @@ usage() {
     -t, --type:     Database type we're looking in. i.e. 'NCTC' or 'CIP'
     "
 }
-
-# go to https://github.com/enasequence/enaBrowserTools to get dis
-ENADATAGET="/home/ak586/src/enaBrowserTools/python3/enaDataGet"
 
 # get ena assembly accession number
 check_ena_assembly() {
@@ -124,27 +121,6 @@ get_seqs() {
                 done
             fi
 
-            #elif [ -f $2/$db_acc/$assembly_acc/*.dat* ]; then
-            #    echo "$db_acc fasta not found easily. Checking for dat files..."
-            #    num_results=$(find $2/$db_acc/$assembly_acc/ -name *.dat* | wc -l)
-            #    echo "$num_results dat file(s) found."
-            #    if [ $num_results -gt 0 ]; then
-            #        ctr=0
-            #        for files in $2/$db_acc/$assembly_acc/*dat*; do 
-            #            base=$(basename $files)
-            #            dir=$(dirname $files)
-            #            if [ $num_results -eq 1 ]; then
-            #                outname="assembly.fa"
-            #            else
-            #                outname="assembly_"$ctr".fa"
-            #            fi
-            #            ((ctr++))
-            #            # requires you to have the Biopython package downloaded 
-            #            #python extract_seq_from_dat.py $files "$dir"/"$base".fa
-            #            extract_dat $files $dir $outname
-            #        done
-            #        echo "$db_acc downloaded" 
-            #    fi
             if grep -q "dat.gz" $2/$db_acc/$assembly_acc/"$assembly_acc".xml; then
                 echo "Found dat file w/in xml"
                 output="$2/$db_acc/$assembly_acc"

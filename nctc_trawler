@@ -25,7 +25,7 @@ usage() {
 #  I literally define this as the biggest NCTC acc. number I can find on the new-strains page.
 #  might be a better way to do this.
 find_max_acc() {
-    echo $(grep -o "<a[^*>]*nctc\">" <(curl -s https://www.phe-culturecollections.org.uk/products/bacteria/new-bacteria-strains.aspx) | cut -d'?' -f2 | cut -d'+' -f2 | cut -d'&' -f1 | sort -n | tail -n1)
+    echo $(grep -o "<a[^*>]*nctc\">" <(curl -s https://www.culturecollections.org.uk/products/bacteria/new-bacteria-strains.aspx) | cut -d'?' -f2 | cut -d'+' -f2 | cut -d'&' -f1 | sort -n | tail -n1)
 }
 
 # build NCTC database 
@@ -38,6 +38,8 @@ build_db() {
        
         # check if we failed or not
         status=$?
+        #echo "hi"
+        #echo "$status"
         [ $status -eq 0 ] && echo -e "\033[1;32m NCTC $i successfully trawled \033[m" || echo -e "\033[1;31m NCTC $i failed\033[m"
 
         # sleep for a bit so we don't crash anything

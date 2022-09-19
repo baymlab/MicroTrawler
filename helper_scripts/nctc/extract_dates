@@ -12,24 +12,25 @@ x = pd.read_csv(sys.argv[1], sep='\t', index_col=0)
 for index,row in x.iterrows():
     year_ext = None
     # super sexy regex to find year
-    regex_for_year = "\\b(?:19|20)\d{2}\\b"
+    #regex_for_year = "\\b(?<!NCTC | DSM |ATCC | LMG )(?:18|19|20)\d{2}\\b"
+    regex_for_year = "\\b(?<!NCTC | DSM |ATCC | LMG )(?:19|20)\d{2}\\b"
     i_f = re.findall(regex_for_year, str(row['Isolated_From']))
     if len(i_f)!=0:
         year_ext = min(i_f)
-        if int(year_ext) > 2020: year_ext = None
+        if int(year_ext) > 2022: year_ext = None
     hist = re.findall(regex_for_year, str(row['History']))
     if len(hist)!=0 and year_ext==None:
         year_ext=min(hist)
-        if int(year_ext) > 2020: year_ext = None
+        if int(year_ext) > 2022: year_ext = None
     other = re.findall(regex_for_year, str(row['Other']))
     if len(other)!=0 and year_ext==None:
         year_ext=min(other)
-        if int(year_ext) > 2020: year_ext = None
+        if int(year_ext) > 2022: year_ext = None
     data = re.findall(regex_for_year, str(row['Data']))
     if len(data)!=0 and year_ext==None:
         year_ext=min(data)
-        if int(year_ext) > 2020: year_ext = None
+        if int(year_ext) > 2022: year_ext = None
     if year_ext == None:
-        print(row['NCTC_Number']+"\t"+"-1")
+        sys.stdout.write(row['NCTC_Number']+"\t"+"-1"+"\n")
     else:
-        print(row['NCTC_Number']+"\t"+year_ext)
+        sys.stdout.write(row['NCTC_Number']+"\t"+year_ext+"\n")
