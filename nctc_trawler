@@ -38,13 +38,23 @@ build_db() {
        
         # check if we failed or not
         status=$?
-        #echo "hi"
-        #echo "$status"
         [ $status -eq 0 ] && echo -e "\033[1;32m NCTC $i successfully trawled \033[m" || echo -e "\033[1;31m NCTC $i failed\033[m"
 
         # sleep for a bit so we don't crash anything
         sleep $4
     done
+}
+
+add_info() {
+    
+    # generate year information
+    echo "Year_Cultured" > $(dirname $out_dest)/nctc_dates
+    $SCRIPTDIR/nctc/extract_dates "$out_dest" >> $(dirname $out_dest)/nctc_dates
+
+    # add info to the dataframe
+
+    # generate GCA accession numbers
+
 }
 
 # read in args
@@ -103,6 +113,9 @@ main() {
 
     # remove all columns w/ '< $clean' number of entries
     python3 $SCRIPTDIR/nctc/clean.py "$out_dest" "$clean"
+
+    # add in the genome assembly information
+    add_info
 }
 
 main "$@"
