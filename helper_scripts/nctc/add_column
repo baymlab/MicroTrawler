@@ -1,0 +1,17 @@
+#!/bin/python
+
+import pandas as pd
+import sys
+import os.path
+
+in_nctcdb = sys.argv[1]
+new_col = sys.argv[2]
+col_name = sys.argv[3]
+
+nctcdb = pd.read_csv(in_nctcdb, sep='\t', index_col=0)
+
+coldf = pd.read_csv(new_col, sep='\t', names=[col_name])
+mapping_dictionary = coldf.to_dict()[col_name]
+
+nctcdb[col_name] = nctcdb['NCTC_Number'].map(mapping_dictionary)
+nctcdb.to_csv(in_nctcdb, sep='\t')
