@@ -48,13 +48,21 @@ build_db() {
 add_info() {
     
     # generate year information
-    echo "Year_Cultured" > $(dirname $out_dest)/nctc_dates
+    #echo "Year_Cultured" > $(dirname $out_dest)/nctc_dates
+    rm -f $(dirname $out_dest)/nctc_dates 2> /dev/null
     $SCRIPTDIR/nctc/extract_dates "$out_dest" >> $(dirname $out_dest)/nctc_dates
 
-    # add info to the dataframe
-
     # generate GCA accession numbers
+    rm -f $(dirname $out_dest)/nctc_accessions 2> /dev/null
+    $SCRIPTDIR/nctc/find_ena_acc -i "$out_dest" -o $(dirname $out_dest)/nctc_accessions
 
+    # add info to the dataframe
+    $SCRIPTDIR/nctc/add_column "$out_dest" "$(dirname $out_dest)/nctc_dates" "Year_Cultured"
+    $SCRIPTDIR/nctc/add_column "$out_dest" "$(dirname $out_dest)/nctc_accessions" "Assembly_Accessions"
+
+    # remove extraneous info
+    rm $(dirname $out_dest)/nctc_dates
+    rm $(dirname $out_dest)/nctc_accessions
 }
 
 # read in args
@@ -97,6 +105,11 @@ main() {
         shift
         shift
         ;;
+        -a|--addinfo)
+        ADDINFO="$2"
+        shift
+        shift
+        ;;
         -h|--help)
         usage
         exit
@@ -114,8 +127,8 @@ main() {
     # remove all columns w/ '< $clean' number of entries
     python3 $SCRIPTDIR/nctc/clean.py "$out_dest" "$clean"
 
-    # add in the genome assembly information
-    add_info
+    # add in the genome assembly + year cultured info 
+    [ -z $ADDINFO ] && add_info
 }
 
 main "$@"
